@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SauceDemoBDD", "SauceDemoBDD.csproj", "{CBCA8E8B-5B92-F8BD-CB89-E5D4D299E123}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBCA8E8B-5B92-F8BD-CB89-E5D4D299E123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCA8E8B-5B92-F8BD-CB89-E5D4D299E123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBCA8E8B-5B92-F8BD-CB89-E5D4D299E123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBCA8E8B-5B92-F8BD-CB89-E5D4D299E123}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {286BF556-AD99-4403-8E3E-0E31F8F5F57C}
+	EndGlobalSection
+EndGlobal
