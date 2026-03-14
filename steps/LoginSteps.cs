@@ -24,10 +24,11 @@ namespace SauceDemoBDD.steps
         {
             string errorMessage = loginPage!.GetErrorMessage();
 
-            Assert.Equals(
-                errorMessage.Contains("Username and password do not match"),
-                "Expected authentication error message not displayed."
-            );
+            Assert.That(
+    errorMessage,  // ✅ Actual value -- page se aaya
+    Does.Contain("Username and password do not match"),  // ✅ Expected text
+    "Authentication error message not displayed!");  // ✅ Failure message
+               
         }
     }
 }
