@@ -50,3 +50,11 @@ jobs:
         with:
           name: test-results
           path: "**/*.trx"
+
+        # Upload Extent Report HTML
+      - name: Upload Extent Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: extent-report
+          path: "**/ExtentReports.html"
