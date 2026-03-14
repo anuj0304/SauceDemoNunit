@@ -2,6 +2,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using WebDriverManager;
 using WebDriverManager.DriverConfigs.Impl;
+using WebDriverManager.Helpers;
 using System;
 
 namespace SauceDemoBDD.support
@@ -12,23 +13,20 @@ namespace SauceDemoBDD.support
 
         public static IWebDriver InitDriver()
         {
-            new DriverManager().SetUpDriver(new ChromeConfig());
+            // Auto-detect installed Chrome version and match ChromeDriver to it
+            new DriverManager().SetUpDriver(
+                new ChromeConfig(),
+                VersionResolveStrategy.MatchingBrowser
+            );
 
             ChromeOptions options = new ChromeOptions();
 
-            // 🔥 Force fresh clean profile
-            options.AddArgument("--incognito");
-
-            // Disable password + automation popups
             options.AddArgument("--disable-notifications");
             options.AddArgument("--disable-infobars");
             options.AddArgument("--disable-popup-blocking");
             options.AddArgument("--headless");
             options.AddArgument("--no-sandbox");
             options.AddArgument("--disable-dev-shm-usage");
-           // options.AddArgument("--disable-blink-features=AutomationControlled");
-
-           // These help with stability on Linux
             options.AddArgument("--disable-gpu");
             options.AddArgument("--window-size=1920,1080");
 
