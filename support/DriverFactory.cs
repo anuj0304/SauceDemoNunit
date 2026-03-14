@@ -20,7 +20,7 @@ namespace SauceDemoBDD.support
             );
 
             ChromeOptions options = new ChromeOptions();
-
+             options.AddArgument("--incognito");
             options.AddArgument("--disable-notifications");
             options.AddArgument("--disable-infobars");
             options.AddArgument("--disable-popup-blocking");

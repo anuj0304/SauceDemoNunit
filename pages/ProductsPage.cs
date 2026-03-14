@@ -28,6 +28,8 @@ namespace SauceDemoBDD.pages
 
         public string GetCartCount()
         {
+           // WaitHelper.SlowDown();
+            WaitHelper.WaitForElementVisible(cartBadge);
             return driver.FindElement(cartBadge).Text;
             
         }
