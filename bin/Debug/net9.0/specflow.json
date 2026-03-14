@@ -1,9 +1,0 @@
-{
-  "$schema": "https://schemas.specflow.org/specflow-config-latest.json",
-  "language": {
-    "feature": "en-us"
-  },
-  "bindingCulture": {
-    "name": "en-us"
-  }
-}

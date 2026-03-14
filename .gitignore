@@ -1,0 +1,47 @@
+cat > .gitignore << 'EOF'
+# Build output
+bin/
+obj/
+
+# Test results & reports
+TestResults/
+*.trx
+*.xml
+ExtentReports/
+Reports/
+
+# Screenshots
+*.png
+*.jpg
+*.jpeg
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+
+# VS Code
+.vscode/
+
+# Mac system files
+.DS_Store
+.AppleDouble
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# NuGet
+*.nupkg
+packages/
+
+# Environment / secrets
+.env
+appsettings.local.json
+
+# ChromeDriver
+**/chromedriver
+**/chromedriver.exe
+**/geckodriver
+EOF
