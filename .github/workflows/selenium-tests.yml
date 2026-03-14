@@ -20,8 +20,14 @@ jobs:
         with:
           dotnet-version: '9.0.x'
 
-      - name: Install Chrome
+      - name: Setup Chrome and ChromeDriver
         uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
+        id: setup-chrome
+
+      - name: Set ChromeDriver env
+        run: echo "CHROME_VERSION=${{ steps.setup-chrome.outputs.chrome-version }}" >> $GITHUB_ENV
 
       - name: Restore dependencies
         run: dotnet restore
@@ -33,6 +39,7 @@ jobs:
         run: dotnet test --no-build --logger "trx;LogFileName=results.trx"
         env:
           DISPLAY: ":99"
+          CHROME_BINARY: /usr/bin/google-chrome
 
       - name: Upload test results
         uses: actions/upload-artifact@v4
