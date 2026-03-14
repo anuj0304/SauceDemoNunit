@@ -23,6 +23,7 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgBoDi Condition=" '$(PkgBoDi)' == '' ">/Users/grel/.nuget/packages/bodi/1.5.0</PkgBoDi>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">/Users/grel/.nuget/packages/microsoft.codeanalysis.analyzers/3.0.0</PkgMicrosoft_CodeAnalysis_Analyzers>
     <PkgNUnit_Analyzers Condition=" '$(PkgNUnit_Analyzers)' == '' ">/Users/grel/.nuget/packages/nunit.analyzers/4.4.0</PkgNUnit_Analyzers>
   </PropertyGroup>
 </Project>

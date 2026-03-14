@@ -23,6 +23,9 @@ namespace SauceDemoBDD.support
             options.AddArgument("--disable-notifications");
             options.AddArgument("--disable-infobars");
             options.AddArgument("--disable-popup-blocking");
+            options.AddArgument("--headless");
+            options.AddArgument("--no-sandbox");
+            options.AddArgument("--disable-dev-shm-usage");
            // options.AddArgument("--disable-blink-features=AutomationControlled");
 
             options.AddUserProfilePreference("credentials_enable_service", false);
