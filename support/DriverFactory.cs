@@ -23,10 +23,14 @@ namespace SauceDemoBDD.support
             options.AddArgument("--disable-notifications");
             options.AddArgument("--disable-infobars");
             options.AddArgument("--disable-popup-blocking");
-           // options.AddArgument("--headless");
-          //  options.AddArgument("--no-sandbox");
-          //  options.AddArgument("--disable-dev-shm-usage");
+            options.AddArgument("--headless");
+            options.AddArgument("--no-sandbox");
+            options.AddArgument("--disable-dev-shm-usage");
            // options.AddArgument("--disable-blink-features=AutomationControlled");
+
+           // These help with stability on Linux
+            options.AddArgument("--disable-gpu");
+            options.AddArgument("--window-size=1920,1080");
 
             options.AddUserProfilePreference("credentials_enable_service", false);
             options.AddUserProfilePreference("profile.password_manager_enabled", false);
