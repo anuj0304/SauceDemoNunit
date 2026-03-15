@@ -1,3 +1,4 @@
+@Purchase
 Feature: Purchase Product
 
   Scenario: Successful purchase of a single product
