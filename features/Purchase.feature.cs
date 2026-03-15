@@ -21,12 +21,14 @@ namespace SauceDemoBDD.Features
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("Purchase Product")]
+    [NUnit.Framework.CategoryAttribute("Purchase")]
     public partial class PurchaseProductFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-        private static string[] featureTags = ((string[])(null));
+        private static string[] featureTags = new string[] {
+                "Purchase"};
         
 #line 1 "Purchase.feature"
 #line hidden
@@ -75,12 +77,14 @@ namespace SauceDemoBDD.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Successful purchase of a single product")]
+        [NUnit.Framework.CategoryAttribute("Purchase")]
         public void SuccessfulPurchaseOfASingleProduct()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "Purchase"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successful purchase of a single product", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 3
+#line 6
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -90,16 +94,16 @@ namespace SauceDemoBDD.Features
             else
             {
                 this.ScenarioStart();
-#line 4
+#line 7
     testRunner.Given("I login as a standard user", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 5
+#line 8
     testRunner.When("I add \"Sauce Labs Backpack\" to the cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 6
+#line 9
     testRunner.And("I checkout with valid customer details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 7
+#line 10
     testRunner.Then("I should see the order confirmation page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

@@ -1,6 +1,8 @@
 @Purchase
 Feature: Purchase Product
 
+
+  @Purchase
   Scenario: Successful purchase of a single product
     Given I login as a standard user
     When I add "Sauce Labs Backpack" to the cart
